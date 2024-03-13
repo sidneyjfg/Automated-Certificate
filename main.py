@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 workbook = xl.load_workbook('planilha_alunos.xlsx')
 sheet_alunos = workbook['Sheet1']
 
-for index, row in enumerate(sheet_alunos.iter_rows(min_row=2, max_row=2)):
+for index, row in enumerate(sheet_alunos.iter_rows(min_row=2)):
 
     course = row[0].value #curso
     student = row[1].value #aluno
